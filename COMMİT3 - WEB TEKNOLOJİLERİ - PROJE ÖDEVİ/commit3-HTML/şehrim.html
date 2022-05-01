@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="TR-tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../commit3-CSS/şehrim.css">
+    <link rel="stylesheet" href="../commit3-JS/silder .js">
+    <title>MUĞLA</title>
+</head>
+<body>
+    <header>
+<ul>
+    <li class="as"><a href="index.html"> ANA SAYFA</a></li>
+    <li class="ş"><a href="şehrim.html">Şehrim</a></li>
+    <li class="tb"><a href="tatilbeldeleri.html">tatil beldeleri</a></li>
+    <li class="yl"><a href="yöresellezzetler.html">yöresel lezzetler</a></li>
+    <li class="ym"><a href="yerelmekanlar.html">yerel mekanlar</a></li>
+    <li class="tü"><a href="türküler.html">türküler</a></li>
+</ul>
+
+
+    </header>
+
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 5</div>
+         <a target="_blank" href="https://www.yerelnet.org.tr/il/mugla/?gclid=CjwKCAjw9qiTBhBbEiwAp-GE0T0SwC1aDVPF3kpX8C5USaTkw43pXeEtmcc8S4N1BuqT0SFC3y4rExoCRxEQAvD_BwE">
+          <img src="/img.slider/gezilecek-yerler.jpg" style="width: 1000px;height: 600px;;">
+         
+         </a>
+          <div class="text"> <!--- TATİL BELDELERİ ---> </div>
+        </div>
+      
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 5</div>
+          <a target="_blank" href="https://www.mugla.bel.tr/sayfa/yoresel-tatlar"> <img src="/img.slider/yöresel-lezzetler.jpg" style="width: 1000px;height: 600px;"></a>
+          
+          <div class="text"> <!--- YÖRESEL LEZZETLER ---> </div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 5</div>
+        <a target="_blank" href="https://www.google.com.tr/search?tbs=lf:1,lf_ui:9&tbm=lcl&sxsrf=ALiCzsZhPJ0o6avNqyWmD3rWioOMtJtk3w:1651196572206&q=mu%C4%9Fla+yerel+mekanlar&rflfq=1&num=10#rlfi=hd:;si:;mv:[[37.2504084,29.197108399999998],[36.6462307,27.273923399999997]];tbs:lrf:!1m4!1u3!2m2!3m1!1e1!1m4!1u2!2m2!2m1!1e1!2m1!1e2!2m1!1e3!3sIAE,lf:1,lf_ui:9">
+          <img src="/img.slider/yerel-mekanlar-bodrum.jpg" style="width: 1000px;height: 600px;">
+        </a>
+        
+        <div class="text"> <!--- YEREL MEKANLAR ---> </div>
+    </div>
+      
+        <div class="mySlides fade">
+          <div class="numbertext">4 / 5</div>
+          <a target="_blank" href="https://turku.sitesi.web.tr/mugla/"> <img src="/img.slider/türkü.jpg" style="width: 1000px;height: 600px;"></a>
+          
+          <div class="text"> <!--- TÜRKÜLER ---> </div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">5 / 5</div>
+    <a target="_blank" href="https://mugla.ktb.gov.tr/TR-159710/letoon-antik-kenti.html"> <img src="/img.slider/mirasımız.jpg" style="width: 1000px;height: 600px;"></a>
+          <div class="text"> <!--- MİRASIMIZ ---> </div>
+        </div>
+    
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+    
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+      </div>
+    
+      <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+    
+        
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+
+
+
+</body>
+</html>
