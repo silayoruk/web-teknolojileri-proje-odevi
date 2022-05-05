@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="TR-tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../commit5-CSS/şehrim.css">
+    <link rel="stylesheet" href="../commit5-JS/silder.js">
+    <title>MUĞLA</title>
+</head>
+<body>
+    <header>
+<ul>
+    <li class="as"><a href="index.html"> ANA SAYFA</a></li>
+    <li class="ş"><a href="şehrim.html">Şehrim</a></li>
+    <li class="tb"><a href="tatilbeldeleri.html">tatil beldeleri</a></li>
+    <li class="yl"><a href="yöresellezzetler.html">yöresel lezzetler</a></li>
+    <li class="ym"><a href="yerelmekanlar.html">yerel mekanlar</a></li>
+    <li class="tü"><a href="türküler.html">türküler</a></li>
+</ul>
+
+
+    </header>
+
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 5</div>
+         <a target="_blank" href="https://www.yerelnet.org.tr/il/mugla/?gclid=CjwKCAjw9qiTBhBbEiwAp-GE0T0SwC1aDVPF3kpX8C5USaTkw43pXeEtmcc8S4N1BuqT0SFC3y4rExoCRxEQAvD_BwE">
+          <img src="../img.slider/gezilecek-yerler.jpg" style="width: 1000px;height: 600px;;">
+         
+         </a>
+          <div class="text"> <!--- TATİL BELDELERİ ---> </div>
+        </div>
+      
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 5</div>
+        <a target="_blank" href="https://mugla.ktb.gov.tr/TR-159710/letoon-antik-kenti.html">
+        <img src="../img.slider/mirasımız.jpg" style="width: 1000px;height: 600px;"></a>
+          <div class="text"> <!--- MİRASIMIZ ---> </div>
+        </div>
+      
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 5</div>
+          <a target="_blank" href="https://www.youtube.com/watch?v=dJf0AOEiwQw&ab_channel=%C3%9Cm%C3%BCtDaldal">
+             <img src="../img.slider/türkü.jpg" style="width: 1000px;height: 600px;"></a>
+          
+          <div class="text"> <!--- TÜRKÜLER ---> </div>
+        </div>
+    
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 5</div>
+            <a target="_blank" href="https://www.google.com.tr/search?tbs=lf:1,lf_ui:9&tbm=lcl&sxsrf=ALiCzsZhPJ0o6avNqyWmD3rWioOMtJtk3w:1651196572206&q=mu%C4%9Fla+yerel+mekanlar&rflfq=1&num=10#rlfi=hd:;si:;mv:[[37.2504084,29.197108399999998],[36.6462307,27.273923399999997]];tbs:lrf:!1m4!1u3!2m2!3m1!1e1!1m4!1u2!2m2!2m1!1e1!2m1!1e2!2m1!1e3!3sIAE,lf:1,lf_ui:9">
+              <img src="../img.slider/yerel-mekanlar-bodrum.jpg" style="width: 1000px;height: 600px;">
+            </a>
+            
+            <div class="text"> <!--- YEREL MEKANLAR ---> </div>
+        </div>
+    
+        <div class="mySlides fade">
+            <div class="numbertext">5 / 5</div>
+            <a target="_blank" href="https://www.mugla.bel.tr/sayfa/yoresel-tatlar"> 
+              <img src="../img.slider/yöresel-lezzetler.jpg" style="width: 1000px;height: 600px;"></a>
+            
+            <div class="text"> <!--- YÖRESEL LEZZETLER ---> </div>
+        </div>
+    
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+    
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+      </div>
+    
+      <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+    
+        
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+<div class="yazialt">
+    <h2> 
+      <br><br>
+      Muğla Türkiye'nin bir ili ve en kalabalık yirmi dördüncü şehri. 2020 itibarıyla 1.021.773 nüfusa sahiptir. Ege Bölgesi’nde, topraklarının küçük bir kısmı Akdeniz Bölgesi içine giren, Ortaca, Dalaman, Köyceğiz, Fethiye, Marmaris, Milas, Datça ve Bodrum gibi tatil yöreleri ile ünlü bir yerleşim yeridir. İlde 13 ilçe bulunur. <br>
+      <br>
+      Türkiye'nin güneybatı ucunda yer alan Muğla, kuzeyinde Aydın, kuzeydoğusunda Denizli ve Burdur, doğusunda Antalya ile komşu olup, güneyinde Akdeniz, batısında  Ege Denizi ile çevrilidir. <br>
+      <br>
+      Toplam uzunluğu 1100 km'yi biraz aşan deniz kıyıları ile Muğla, Ülkemizin en uzun sahil şeridine sahip ilidir. En büyük ilçesi Fethiye’dir. Muğla ilinde ayrıca iki büyük göl bulunmaktadır. Bunlar, Milas ile Aydın ilinin Söke ilçesi sınırlarının içine de giren  Bafa Gölü ile Köyceğiz ilçesindeki Köyceğiz Gölü'dür. Önemli üç akarsuyu ise Çine Çayı (Yatağan'dan geçerken Yatağan Çayı), Esen Çayı  (Seki beldesinden geçerken Seki Çayı) ve Ortaca-Dalaman arasında yer alan ve bu iki ilçe arasında sınır olarak kabul edilen Dalaman Çayı'dır. <br>
+      <br>
+      İlin Yatağan ilçesinde Yatağan Termik Santrali Yeniköy'de Yeniköy Termik Santrali, Kemerköy’de Kemerköy Termik Santrali vardır. <br>
+      <br>
+      İlin maden yatakları zengindir. Bunların en önemlileri,  Yatağan linyit kömürü ve Fethiye krom yataklarıdır. Bunların yanında Muğla, önemli bir mermercilik merkezidir. İlin ekonomisi,  büyük ölçüde turizm ve tarıma dayalıdır. Ayrıca Dalaman ilçesinde Kağıt Fabrikası (eski adı SEKA, yeni adı MOPAK) bulunmaktadır. <br>
+      <br>
+      Antik Karya bölgesinin en eski yerleşimlerinden biri olan Muğla, bilinen tarihi boyunca başlangıçta Anadolu'nun yerli halkı Karyalıların, ardından kısmen ve kısa dönemler halinde Mısır, Asur ve İskit işgallerinin, zamanla da özellikle kıyılarda Helenlerin egemenliği altında kalmıştır. Önce Medler, daha sonra Persler Muğla'yı idareleri altında almışlar ve bölgeyi bir satrap aracılığıyla yönetmişlerdir. Büyük İskender'in ordularıyla gelişinde, Muğla bölgesi bir Karya satrapı tarafından yönetilmekte idi. <br>
+      <br>
+      'Karya' isminin bölgeye M.Ö. 3400 yıllarında gelen kavimlere önderlik etmiş 'Kar' isimli bir komutandan kaynaklandığına ilişkin tezler öne sürülmektedir. Bölge, çağlar boyunca Karya olarak anılmıştır.  Kuzeyde Söke, Aydın, Nazilli’den başlayıp, güneyde Dalaman çayının denize döküldüğü yerde biten Karya bölgesi, kuzeyinde Lidyalıların, güneyinde Likyalıların ve Anadolu içlerinde de Frigyalıların hüküm sürdüğü bölgelere komşu olmuştur. <br>
+      <br>
+      Muğla ili tarihi kalıntılar açısından son derece zengin olup, sınırları içinde 103 ören yeri bulunmaktadır. <br>
+      <br>
+      Muğla; oyun, müzik ve türkü folkloru bakımından çok zengindir. Zeybek havaları, teke  ve kaşık oyunları yaygındır. Teke oyunları Fethiye’de; Zeybek oyunları ise Bodrum, Milas, Köyceğiz ve Muğla’da yaygındır. Kına gecelerinde “Temel devren” adıyla söylenen türküler çok ve meşhurdur. Türkülerde gurbet havaları, Avşar beyleri, uzun yol havaları, semahlar, gemici türküleri, gelin ağlatma ağıtları ve zortlatmalar ağır basar. Bölgenin meşhur oyunları Bilalin Zeybeği, Satı Zeybeği, Ferayi, Bıçak Oyunu, Kalkan Oyunu, Kuruoğlu, Zapbak, Buhurcular Zeybeği, Çıktım Tepe, Gidene Bak Gidene, Demirciler, Eydim Kavak Zeybekleridir. <br>
+      <br>
+      Muğla ili tarım ürünlerinin çeşitliliği ile dikkati çeker. Türkiye'de arıcılığın en önemli merkezlerinden biridir. Yörede hem çiçek hem de çam balı üretimi yapılmaktadır.  Marmaris ilçesi çam balı ile ünlüdür. Ortaca, Fethiye, Dalaman ve Dalyan ilçelerinde yaygın bir şekilde narenciye tarımı (portakal, mandalina, limon vs) yapılmaktadır. Özellikle Marmaris-Köyceğiz hattına özgü bir diğer ürün, günlük ağacından elde edilen ve eczacılıkta kullanılan sığla yağıdır. Zeytincilik de il genelinde gelişmiştir. <br>
+      <br>
+      Muğla, bir ‘büyükşehir’dir. Bu özelliğine göre yönetimi belirlenmiştir. Protokolde ilk sırada yer alan Vali, merkezi yönetimi temsil eder ve Cumhurbaşkanı tarafından atanır. <br>
+      <br>
+      Büyükşehir yapılan illerde, İl Genel Meclisi, yetki ve görevlerini Büyükşehir Belediye Meclisi’ne devretmiş ve kaldırılmıştır. <br>
+      <br>
+      Muğla Valisi, 1965- Ünye doğumlu Orhan TAVLI, 9.06.2020/274 sayılı kararla Çanakkale Valisi iken atanmıştır. <br>
+      <br>
+      Büyükşehir yapılan illerde, İl Genel Meclisi, yetki ve görevlerini Büyükşehir Belediye Meclisi’ne devretmiş ve kaldırılmıştır. <br>
+      <br>
+      Muğla Büyükşehir Belediye Başkanı, 1948-Muğla doğumlu Dr.Osman Gürün (CHP), 31 Mart 2019 seçimlerinde %36,01 oy oranıyla seçilmiştir. <br>
+      <br>
+      İlçe belediyeleri, 2019 Türkiye yerel seçimleri'ne göre, üç değişik parti tarafından yönetilmektedir. Bu ilçelerden 6'sı AK PARTİ, 6'sı CHP ve 1'i MHP'li belediye başkanıdır. <br>
+      <br>
+      Muğla Büyükşehir Belediye Meclisi üye sayısı 68’dir (Büyükşehir Belediye Başkanı, 13 ilçe belediye başkanı ve 55 üye) Bunların 25’i AKP, 35'i CHP, 5’i MHP, 3'i İYİ P.'dir. <br>
+      <br>
+
+    </h2>
+</div>
+
+
+</body>
+</html>
