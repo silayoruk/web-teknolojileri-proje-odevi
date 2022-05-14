@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+    header{
+        width: auto;
+        height: 80px;
+        background-color:rgba(220, 210, 210,1);
+        user-select: none;
+        text-transform: uppercase;
+        position: relative;
+        margin: auto;
+    }
+    header ul{
+        position: relative;
+        display: flex;
+        list-style: none;
+        text-align: center;
+        justify-content: center;
+        font-family: monospace;
+    }
+    header ul li{
+        position: relative;
+        top: 20px;
+        text-transform: uppercase;
+        font-style: normal;
+    }
+    header ul li a{
+        position: relative;
+        padding: 5px 10px;
+        color: black;
+        display: inline-block;
+        cursor: pointer;
+        text-decoration: none;
+        font-size: 1rem;
+        font-weight: bold;
+    }
+    header ul li a:hover{
+        background-color: rgba(0,0,0,0.1);
+        color:rgb(148, 87, 110);
+        border-radius: 40px;
+    }
+
+
+.h{
+    background-color: rgba(0,0,0,0.2);
+    border-radius: 40px;
+    width: auto;
+    position: relative;
+}
+
+
+
+body{
+    background-image: url(../IMG/img/backgroundimg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    background-color:rgba(220, 210, 210,1) ;
+    position: relative;
+    user-select: none;
+}
+h2{
+    position: relative;
+    text-indent: 1cm;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.6rem;
+    background-color:rgba(220, 210, 210,0.2);
+    color: black;
+    line-height: 1.7rem;
+}
