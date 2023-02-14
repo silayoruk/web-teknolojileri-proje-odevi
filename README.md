@@ -1,4 +1,4 @@
-# web-teknolojileri-proje-odevi
+# PROJE / sila yoruk website
 Öncelikli amacım kendimi ve şehrimi tanıtan bir web sitesi oluşturmak.
 Sitemi bootstrap içeren responsive bir yapı kullanarak tasarlamaya başlayacağım. 
 Sitemin ana sayfasında, beni ve şehrimi daha iyi tanıyabilmek adına ulaşabileceğiniz sizi ilgili sayfalara yönlendirecek site içi linkler vereceğim. Ana sayfam bu linklerle HAKKIMDA, ÖZGEÇMİŞ, ŞEHRİM, MİRASIMIZ, İLGİ ALANLARIM, İLETİŞİM ve GİRİŞ YAP sayfası olarak yedi ana bölümle sizi karşılayacak.
